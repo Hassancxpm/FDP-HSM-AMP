@@ -236,6 +236,7 @@
     <script async src="https://cdn.ampproject.org/v0.js"></script>
     <script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
     <script async custom-element="amp-social-share" src="https://cdn.ampproject.org/v0/amp-social-share-0.1.js"></script>
+    <script async custom-element="amp-install-serviceworker" src="https://cdn.ampproject.org/v0/amp-install-serviceworker-0.1.js"></script>
     <script type="application/ld+json">
     {
      "@context": "http://schema.org",
@@ -258,6 +259,11 @@
   </head>
 
   <body>
+
+    <amp-install-serviceworker src="sw.js"
+      data-iframe-src="sw.html"
+      layout="nodisplay">
+    </amp-install-serviceworker>
 
     <header>
       <amp-img class="logo" alt="logo" src="logo.jpg" layout="responsive" width="100" height="50"></amp-img>
