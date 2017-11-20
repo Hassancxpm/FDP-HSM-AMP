@@ -4,6 +4,7 @@ toolbox.precache(['index.html','favicon.png','logo.webp', 'plan.webp', 'lampadai
 
 toolbox.router.default = toolbox.cacheFirst;
 
-self.addEventListener("install", function(event) {
+/*self.addEventListener("install", function(event) {
   console.log('SW: Installing service worker');
 });
+*/
